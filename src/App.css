@@ -21,12 +21,11 @@ html h3, body h3 {
   font-weight: 500;
 }
 
-.wrapper-grid {
+.wrapper {
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "main" "footer";
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .btn-yellow {
