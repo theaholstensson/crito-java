@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Button from './generics/Button'
 import img_linkedinsales from './../assets/images/linkedin-sales-solutions-Mis5fyJi7Q0-unsplash.jpg'
 import img_emiliano from './../assets/images/emiliano-vittoriosi-vEN1bsdSjxM-unsplash.jpg'
 import img_kobuagency from './../assets/images/kobu-agency-ipARHaxETRk-unsplash.jpg'
@@ -11,7 +12,7 @@ const ArticleNewsSection = () => {
             <h3>Article & News</h3>
             <div className="browse">
                 <h1>Get Every Single Article & News</h1>
-                <a className="btn-transparent" href="news.html" target="blank">Browse Articles<i className="fa-regular fa-arrow-up-right"></i></a>
+                <Button type="transparent" title="Browse Articles" url="/browsearticles" />
             </div>
 
             <div className="articles">

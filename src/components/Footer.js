@@ -11,7 +11,7 @@ const Footer = () => {
           <img className="background-lines" src={img_backgroundlineswhiteright} alt="White curvy lines" />
           <div class="container">
               <div class="info">
-                  <a href="home.html"><img className='logotype-white' src={img_logotypewhite} alt="The logo, a colorful C with a diagonal circle around it, beside it says Crito Consulting Service" /></a>
+                  <a href="/"><img className='logotype-white' src={img_logotypewhite} alt="The logo, a colorful C with a diagonal circle around it, beside it says Crito Consulting Service" /></a>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
               </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Button from './generics/Button'
 import img_group2 from './../assets/images/Group-2.svg'
 import img_group1 from './../assets/images/Group-1.svg'
 import img_group3 from './../assets/images/Group-3.svg'
@@ -12,7 +13,7 @@ const FeaturesSection = () => {
           <div className="info">
           <h3>Features</h3>
           <h1>Our Accounting is trusted by thousand of companies</h1>
-          <a className="btn-yellow" href="features.html">Learn More<i className="fa-regular fa-arrow-up-right"></i></a>
+          <Button type="yellow" title="Learn more" url="/learnmore" />
           </div>
 
           <div className="info-side">

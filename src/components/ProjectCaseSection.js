@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Button from './generics/Button'
 import img_adeolu from './../assets/images/adeolu-eletu-E7RLgUjjazc-unsplash.jpg'
 import img_mareklevak from './../assets/images/marek-levak-zANXcXyByos-unsplash.jpg'
 import img_olidale from './../assets/images/oli-dale-xjSkI_seiZY-unsplash.jpg'
@@ -40,7 +41,7 @@ const ProjectCaseSection = () => {
 
       </div>
 
-      <a className="btn-black" href="recent-projects.html" target="blank">All Recent Projects<i className="fa-regular fa-arrow-up-right"></i></a>
+      <Button type="black" title="All Recent Projects" url="/recentprojects" />
     </section>
   )
 }

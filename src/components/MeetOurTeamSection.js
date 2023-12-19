@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Button from './generics/Button'
 import img_christinawoc1 from './../assets/images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg'
 import img_itayverchik from './../assets/images/itay-verchik-6ZKGBzrDd3I-unsplash.jpg'
 import img_christinawoc2 from './../assets/images/christina-wocintechchat-com-Zpzf7TLj_gA-unsplash.jpg'
@@ -13,7 +14,7 @@ const MeetOurTeamSection = () => {
 
           <div className="browse">
               <h1>Experience Team Members</h1>
-              <a className="btn-transparent" href="team.html" target="blank">Browse Team<i className="fa-regular fa-arrow-up-right"></i></a>
+              <Button type="transparent" title="Browse Team" url="/browseteam" />
           </div>
 
           <div className="team">

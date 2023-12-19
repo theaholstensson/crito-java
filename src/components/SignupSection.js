@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Button from './generics/Button'
 import img_backgroundwavylines from './../assets/images/background-wavy-lines.svg'
 
 const SignupSection = () => {
@@ -11,7 +12,7 @@ const SignupSection = () => {
               <h1>Get News Updates By Signup</h1>
               <div className="subscribe">
                   <input type="text" placeholder="username@domain.com" />
-                  <a className="btn-yellow" href="#">Subscribe<i class="fa-regular fa-arrow-up-right"></i></a>
+                  <Button type="yellow" title="Subscribe" url="/subscribe" />
               </div>
           </div>
       </div>

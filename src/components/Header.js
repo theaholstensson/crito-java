@@ -1,12 +1,13 @@
 import React from 'react'
 
+import Button from './generics/Button'
 import img_logotype from './../assets/images/logotype.svg'
 
 const Header = () => {
   return (
     <header>
         <div className="container">
-            <a href="home.html"><img className='logotype' src={img_logotype} alt="The logo, a colorful C with a diagonal circle around it, beside it says Crito Agency Service" /></a>
+            <a href="/"><img className='logotype' src={img_logotype} alt="The logo, a colorful C with a diagonal circle around it, beside it says Crito Agency Service" /></a>
             <button className="menu-bars"><i className="fa-solid fa-bars-staggered"></i></button>
             <div className="menu">
                 <div className="top-menu">
@@ -33,12 +34,12 @@ const Header = () => {
                 </div>
                 <div className="main-menu">
                     <nav>
-                        <a className="active" href="home.html">Home</a>
-                        <a href="service.html">Service</a>
-                        <a href="news.html">News</a>
-                        <a href="contact.html">Contact</a>
+                        <a className="active" href="/">Home</a>
+                        <a href="/services">Service</a>
+                        <a href="/news">News</a>
+                        <a href="/contact">Contact</a>
                     </nav>
-                    <a className="btn-yellow" href="login.html">Login <i className="fa-regular fa-arrow-up-right"></i></a>
+                    <Button type="yellow" title="Login" url="/login" />
                 </div>
             </div>
         </div>

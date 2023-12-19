@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Button from './generics/Button'
 import img_dariapimkina from './../assets/images/daria-pimkina-tYaccl19A3Q-unsplash.jpg'
 
 const AboutCompanySection = () => {
@@ -22,8 +23,8 @@ const AboutCompanySection = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
           <div className="buttons">
-              <a className="btn-black" href="about-company.html">Learn More<i className="fa-regular fa-arrow-up-right"></i></a>
-              <a className="video-btn-text" href="intro-video"><i className="fa-regular fa-circle-play"></i><span className="btn-video">Intro Video</span></a>
+            <Button type="black" title="Learn more" url="/learnmore" />
+            <a className="video-btn-text" href="intro-video"><i className="fa-regular fa-circle-play"></i><span className="btn-video">Intro Video</span></a>
           </div>
       </div>
     </section>

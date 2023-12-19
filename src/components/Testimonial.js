@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Button from './generics/Button'
 import img_vinceveras from './../assets/images/vince-veras-AJIqZDAUD7A-unsplash.jpg'
 import img_christinawoc3 from './../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg'
 import img_josephgonzales from './../assets/images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg'
@@ -68,9 +69,9 @@ const Testimonial = () => {
                   </div>
               </div>
 
-              <a class="btn-black" href="reviews.html" target="blank">All Reviews<i class="fa-regular fa-arrow-up-right"></i></a>
+              <Button type="black" title="All Reviews" url="/allreviews" />
 
-          </div>
+            </div>
       </div>
     </section>
   )
