@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const InfoCards = ({title, description, url}) => {
   return (
@@ -6,7 +7,7 @@ const InfoCards = ({title, description, url}) => {
         <div className="line"></div>
         <h2>{title}</h2>
         <p>{description}</p>
-        <a className="btn-arrow" href={url} target="blank"><i className="fa-regular fa-arrow-right"></i></a>
+        <Link className="btn-arrow" to={url} target="blank"><i className="fa-regular fa-arrow-right"></i></Link>
     </div>
   )
 }

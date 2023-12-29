@@ -18,37 +18,37 @@ const WhyChooseUsSection = () => {
 
               <div className="icon">
                   <img src={img_process} alt="A thumbs up with sparkles around it" />
-                      <div className="text">
-                      <h2>Process Excellence</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                      </div>
+                    <div className="text">
+                    <h2>Process Excellence</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                    </div>
               </div>
 
               <div className="icon">
                   <img src={img_strategic} alt="A romb" />
-                      <div className="text">
-                      <h2>Strategic Planning</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                      </div>
+                    <div className="text">
+                    <h2>Strategic Planning</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                    </div>
               </div>
 
               <div className="icon">
                   <img src={img_experience} alt="A bezier curve/vector" />
-                      <div className="text">
-                      <h2>Experience Design</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                      </div>
+                    <div className="text">
+                    <h2>Experience Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                    </div>
               </div>
 
               <div className="icon">
                   <img src={img_ai} alt="a head in profile with a cogwheel inside" />
-                      <div className="text">
-                      <h2>Artificial Intelligence</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                      </div>
+                    <div className="text">
+                    <h2>Artificial Intelligence</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                    </div>
               </div>
-
           </div>
+          
           <div className="picture">
               <img src={img_amyhirschi} alt="Two women in front of a brick wall, sitting in leather chairs behind a tree table discussing about something showing on the ipad which one of the women is holding" />
           </div>

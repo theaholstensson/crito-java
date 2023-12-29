@@ -1,14 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { NavLink, Link } from 'react-router-dom'
 
 import Button from './generics/Button'
 import img_logotype from './../assets/images/logotype.svg'
 
 const Header = () => {
+    const [showMenu, setShowMenu] = useState(false)
+    const [btnClasses, setBtnClasses] = useState('btn-menu')
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+        setBtnClasses(!showMenu ? 'btn-menu active' : 'btn-menu')
+    }
+
   return (
     <header>
         <div className="container">
-            <a href="/"><img className='logotype' src={img_logotype} alt="The logo, a colorful C with a diagonal circle around it, beside it says Crito Agency Service" /></a>
-            <button className="menu-bars"><i className="fa-solid fa-bars-staggered"></i></button>
+            <Link to="/"><img className='logotype' src={img_logotype} alt="The logo, a colorful C with a diagonal circle around it, beside it says Crito Agency Service" /></Link>
+            <button className={btnClasses} onClick={toggleMenu} ><i className="fa-solid fa-bars-staggered"></i></button>
+
+            {showMenu && (
+                <nav>
+                    <ul>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/services">Services</NavLink></li>
+                        <li><NavLink to="/news">News</NavLink></li>
+                        <li><NavLink to="/contact">Contact</NavLink></li>
+                    </ul>
+                </nav>
+            )}
+
             <div className="menu">
                 <div className="top-menu">
                     <div className="contact-information">
@@ -34,10 +55,10 @@ const Header = () => {
                 </div>
                 <div className="main-menu">
                     <nav>
-                        <a className="active" href="/">Home</a>
-                        <a href="/services">Service</a>
-                        <a href="/news">News</a>
-                        <a href="/contact">Contact</a>
+                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/services">Services</NavLink>
+                        <NavLink to="/news">News</NavLink>
+                        <NavLink to="/contact">Contact</NavLink>
                     </nav>
                     <Button type="yellow" title="Login" url="/login" />
                 </div>

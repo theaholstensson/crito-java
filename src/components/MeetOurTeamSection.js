@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Button from './generics/Button'
 import img_christinawoc1 from './../assets/images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg'
@@ -43,11 +44,11 @@ const MeetOurTeamSection = () => {
               </div>
           </div>
           <div className="dots">
-              <a href="#"><i className="fa-solid fa-circle"></i></a>
-              <a className="active" href="#"><i className="fa-solid fa-circle"></i></a>
-              <a href="#"><i className="fa-solid fa-circle"></i></a>
-              <a href="#"><i className="fa-solid fa-circle"></i></a>
-              <a href="#"><i className="fa-solid fa-circle"></i></a>
+              <Link to="#"><i className="fa-solid fa-circle"></i></Link>
+              <Link to="#"><i className="fa-solid fa-circle"></i></Link>
+              <Link to="#"><i className="fa-solid fa-circle"></i></Link>
+              <Link to="#"><i className="fa-solid fa-circle"></i></Link>
+              <Link to="#"><i className="fa-solid fa-circle"></i></Link>
           </div>
       </div>
     </section>

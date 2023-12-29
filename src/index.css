@@ -94,6 +94,7 @@ html h3, body h3 {
 header {
   background-color: #f0efe9;
   padding: 16px;
+  z-index: 0;
 }
 header .container {
   display: flex;
@@ -101,14 +102,54 @@ header .container {
   justify-content: space-between;
   gap: 70px;
 }
-header .container .menu-bars {
+header .container .btn-menu {
+  z-index: 1;
   border: none;
   font-size: 25px;
   background-color: transparent;
   color: #191919;
 }
+header .container .btn-menu.active {
+  z-index: 1;
+  color: #ffffff
+}
+header .container nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.98;
+  background-color: #191919;
+}
+header .container nav ul {
+  padding: 0;
+  margin-top: 85px;
+  list-style: none;
+  width: 100%;
+  color: #ffffff;
+  border-top: 1px solid #262626;
+}
+header .container nav ul li {
+  font-size: 1.5rem;
+  width: 100%;
+  border-bottom: 1px solid #262626;
+  text-align: center;
+}
+header .container nav ul li a {
+  color: #ffffff;
+  padding: 30px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  transition: background 0.15s ease-in-out;
+}
+header .container nav ul li a:hover, header .container nav ul li a.active {
+  background-color: #262626;
+}
 @media (min-width: 992px) {
-  header .container .menu-bars {
+  header .container .btn-menu {
     display: none;
   }
 }
@@ -200,13 +241,13 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .showcase {
   background-color: #f0efe9;
   position: relative;
-  z-index: 0;
+  z-index: -1;
 }
 .showcase .background-lines {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: -2;
   display: none;
 }
 @media (min-width: 1400px) {
@@ -1704,7 +1745,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   padding-top: 60px;
   padding-bottom: 65px;
   position: relative;
-  z-index: 0;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1720,7 +1761,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: -2;
   display: none;
 }
 @media (min-width: 1400px) {
@@ -2467,7 +2508,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   padding-top: 60px;
   padding-bottom: 65px;
   position: relative;
-  z-index: 0;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2483,7 +2524,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: -2;
   display: none;
 }
 @media (min-width: 1400px) {
@@ -2620,6 +2661,14 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
     width: 35%;
   }
 }
+.leave-us-a-message .container .errorMessage {
+  color: rgb(185, 0, 0);
+  padding-bottom: 10px;
+}
+.leave-us-a-message .container .thankYouMessage {
+  color: green;
+  padding-bottom: 20px;
+}
 .leave-us-a-message .container form {
   display: flex;
   flex-direction: column;
@@ -2641,9 +2690,15 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   margin-bottom: 44px;
   height: 160px;
 }
-.leave-us-a-message .container form .btn-yellow {
+.leave-us-a-message .container form button {
   text-align: center;
   padding: 18px 0px;
+  background-color: #f9d783;
+  border: 1px solid #f9d783;
+  border-color: #f9d783;
+  border-radius: 40px;
+  color: #191919;
+  font-weight: 600;
 }
 
 .map .google-map {

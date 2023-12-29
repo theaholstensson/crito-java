@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink, Link } from 'react-router-dom'
 
 import Button from './generics/Button'
 import img_linkedinsales from './../assets/images/linkedin-sales-solutions-Mis5fyJi7Q0-unsplash.jpg'
@@ -16,7 +17,7 @@ const ArticleNewsSection = () => {
             </div>
 
             <div className="articles">
-                <a href="25-mar-article.html"><div className="news">
+                <Link to="/newsDetails"><div className="news">
                     <div className="img-date">
                         <div className="image">
                             <img src={img_linkedinsales} alt="A happy woman with brown hair in a dark blue shirt sitting on a chair beside a table, looking to the upper left corner" />
@@ -31,9 +32,9 @@ const ArticleNewsSection = () => {
                     <h4>Business</h4>
                     <h2>How To Use Digitalization In The Classroom</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </div></a>
+                </div></Link>
 
-                <a href="17-mar-article.html"><div className="news">
+                <Link to="/newsDetails"><div className="news">
                     <div className="img-date">
                         <div className="image">
                             <img src={img_emiliano} alt="What Chat GPT shows when you're about to start a new conversation" />
@@ -48,9 +49,9 @@ const ArticleNewsSection = () => {
                     <h4>Business</h4>
                     <h2>How To Implement Chat GPT In Your Projects</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </div></a>
+                </div></Link>
 
-                <a href="13-mars-article.html"><div className="news">
+                <Link to="/newsDetails"><div className="news">
                     <div className="img-date">
                         <div className="image">
                             <img src={img_kobuagency} alt="A black thick book, a white thinner book and a white phone on top of eachother on a white desk" />
@@ -65,15 +66,15 @@ const ArticleNewsSection = () => {
                     <h4>Business</h4>
                     <h2>The Guide To Support Modern CSS Design</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </div></a>
+                </div></Link>
             </div>
 
             <div className="dots">
-                <a className="active" href="#"><i className="fa-solid fa-circle"></i></a>
-                <a href="#"><i className="fa-solid fa-circle"></i></a>
-                <a href="#"><i className="fa-solid fa-circle"></i></a>
-                <a href="#"><i className="fa-solid fa-circle"></i></a>
-                <a href="#"><i className="fa-solid fa-circle"></i></a>
+                <NavLink to="/"><i className="fa-solid fa-circle"></i></NavLink>
+                <Link to="*"><i className="fa-solid fa-circle"></i></Link>
+                <Link to="*"><i className="fa-solid fa-circle"></i></Link>
+                <Link to="*"><i className="fa-solid fa-circle"></i></Link>
+                <Link to="*"><i className="fa-solid fa-circle"></i></Link>
             </div>
 
         </div>

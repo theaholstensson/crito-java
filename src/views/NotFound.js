@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <div className="wrapper">
         <main>
-            <h1>404 Sidan kunde inte hittas</h1>
+            <h1>404 Page Not Found</h1>
         </main>
         <Footer />
     </div>
